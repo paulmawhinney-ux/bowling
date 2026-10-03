@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  /* Blue / black / gray scoreboard palette */
+  --walnut: #14181F;
+  --walnut-light: #1E2530;
+  --paper: #D7DCE3;
+  --paper-light: #F4F6F8;
+  --pin-red: #3B6FD1;
+  --lane-green: #2A3F5F;
+  --brass: #6C90C7;
+  --ink: #1A1F28;
+  --ink-soft: #5C6573;
+
+  --display: 'Oswald', sans-serif;
+  --body: 'Inter', sans-serif;
+  --data: 'JetBrains Mono', monospace;
+
+  color-scheme: light;
+  font-family: var(--body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--walnut);
+}
+
+#root {
+  min-height: 100svh;
+  background: var(--walnut);
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      var(--walnut) 0px,
+      var(--walnut-light) 2px,
+      var(--walnut) 4px,
+      var(--walnut) 40px
+    );
+}
+
+button {
+  font-family: var(--body);
+  cursor: pointer;
+}
+
+input {
+  font-family: var(--body);
+}
